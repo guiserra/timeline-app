@@ -1,12 +1,21 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import timelineItems from "./timelineItems.js";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import Timeline from './components/Timeline';
+import './styles/timeline.css';
 
 function App() {
   return (
-    <div>
-      <h2>Good luck with your assignment! {"\u2728"}</h2>
-      <h3>{timelineItems.length} timeline items to render</h3>
+    <div className="App">
+      <div className='card'>
+        <div className='header'>
+          <h1 className="title">Timeline Visualization</h1>
+          <p className="description">A simple timeline visualization app</p>
+        </div>
+      </div>
+      <div className='timeline-container'>
+        <Timeline />
+      </div>
+
     </div>
   );
 }
